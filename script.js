@@ -5,14 +5,14 @@ const reviewCardWrapper = document.querySelector(".review-card-wrapper");
 let currentIndex = 0;
 const reviews = [
   {
-    image: "/public/images/Award.png",
+    image: "/images/s3/image 558.svg",
     alt: "Gartner Award",
     rating: 4.3, // Will display 4 full stars
   },
   {
-    image: "/public/images/Award.png",
+    image: "/images/s3/image 558.svg",
     alt: "Gartner Award",
-    rating: 2.3, // Will display 2 full stars
+    rating: 2.3, // Will  dcvdisplay 2 full stars
   },
   // Add more review objects here for additional cards
 ];
