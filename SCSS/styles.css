@@ -344,82 +344,63 @@ img {
 
 /* Extra Small Devices (Phones, <576px) */
 @media (max-width: 575.98px) {
-  .logos-wrapper {
+  .logos-section {
+    padding: 3rem 1rem 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logos-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 logos per row */
+    grid-template-rows: auto 1fr auto; /* Top row, middle text, bottom row */
+    gap: 1rem;
+    justify-items: center;
     align-items: center;
     max-width: 75rem;
     margin: 0 auto;
-    position: relative;
-    min-height: 25rem;
+    min-height: 15rem;
+    position: static;
   }
   .logo-box {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     background: #fff;
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: static;
+    margin: 0;
   }
   .Logo1 {
-    margin-left: -60%;
-    margin-top: -23%;
+    margin-left: -2%;
   }
   .Logo2 {
-    margin-left: -75%;
-    margin-top: -8%;
-  }
-  .Logo3 {
-    margin-left: -60%;
-    margin-top: 7%;
-  }
-  .Logo4 {
-    margin-left: -90%;
-    margin-top: 7%;
+    margin-left: -1%;
   }
   .Logo5 {
-    margin-left: 75%;
-    margin-top: -25%;
+    margin-top: 0%;
+    margin-right: -1%;
   }
   .Logo6 {
-    margin-left: 93%;
+    margin-left: 6%;
   }
   .Logo7 {
-    margin-left: 1%;
-    margin-top: -15%;
-  }
-  .Logo8 {
-    margin-right: 5;
-    margin-top: -5%;
-  }
-  .Logo9 {
-    margin-left: 1%;
-    margin-top: -1%;
+    margin-right: 32%;
   }
   .Logo10 {
-    margin-left: 75%;
-    margin-top: 0%;
-  }
-  .logos-section {
-    padding: 3rem 1rem 2rem;
-  }
-  .logos-wrapper {
-    min-height: 15rem;
-    flex-direction: column;
-    gap: 1rem;
-    position: static;
-  }
-  .logo-box {
-    width: 3rem;
-    height: 3rem;
-    position: static;
-    margin: 0 auto;
+    margin-top: 4.7%;
+    margin-left: 73%;
   }
   .center-text {
     max-width: 90%;
+    grid-column: 1/-1; /* Span all 5 columns */
+    grid-row: 2; /* Place in middle row */
+    text-align: center;
+    align-self: center;
+    margin: 1rem 0;
   }
   .center-text h1 {
     font-size: clamp(1.5rem, 4vw, 2rem);
@@ -438,7 +419,7 @@ img {
   }
   .automation-text h2 {
     padding-top: 2rem;
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp割(1.5rem, 4vw, 2rem);
   }
   .automation-btn {
     margin: 1rem auto 0;
